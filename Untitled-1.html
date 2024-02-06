@@ -1,91 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Forms Review</title>
-  </head>
-  <body>
-    <section id="overlay">
-      <img src="https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
-      <hr>
-      <form action="submission.html" method="POST">
-				<h1>Create a burger!</h1>
-        <section class="protein">
-          <label for="patty">What type of protein would you like?</label>
-    			<input type="text" name="patty" id="patty">
-        </section>
-        <hr>
-        
-        <section class="patties">
-          <label for="amount">How many patties would you like?</label>
-          <input type="number" name="amount" id="amount">
-        </section>
-        <hr>
-        
-        <section class="cooked">
-          <label for="doneness">How do you want your patty cooked</label>
-          <br>
-          <span>Rare</span>
-          <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
-          <span>Well-Done</span>
-        </section>
-        <hr>
-        
-        <section class="toppings">
-          <span>What toppings would you like?</span>
-          <br>
-          <input type="checkbox" name="topping" id="lettuce" value="lettuce">
-          <label for="lettuce">Lettuce</label>
-          <input type="checkbox" name="topping" id="tomato" value="tomato">
-          <label for="tomato">Tomato</label>
-          <input type="checkbox" name="topping" id="onion" value="onion">
-          <label for="onion">Onion</label>
-        </section>
-        <hr>
-        
-        <section class="cheesy">
-          <span>Would you like to add cheese?</span>
-          <br>
-          <input type="radio" name="cheese" id="yes" value="yes">
-          <label for="yes">Yes</label>
-          <input type="radio" name="cheese" id="no" value="yes">
-          <label for="no">No</label>
-        </section>
-        <hr>
-       
-        <section class="bun-type">
-          <label for="bun">What type of bun would you like?</label>
-          <select name="bun" id="bun">
-            <option value="sesame">Sesame</option>
-            <option value="potatoe">Potato</option>
-            <option value="pretzel">Pretzel</option>
-          </select>
-        </section>
-        <hr>
-        
-        <section class="sauce-selection">
-          <label for="sauce">What type of sauce would you like?</label>
-          <input list="sauces" id="sauce" name="sauce">
-          <datalist id="sauces">
-            <option value="ketchup"></option>
-            <option value="mayo"></option>
-            <option value="mustard"></option>
-          </datalist>
-        </section>
-        <hr>
-        <section class="extra-info">
-          <label for="extra">Anything else you want to add?</label>
-          <br>
-          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
-        </section>
-        <hr>
+<html>
 
-        <section class="submission">
-          <input type="submit" value="Submit">
-        </section>
-      </form>
-    </section>
-  </body>
+<head>
+  <title>Vacation World</title>
+  <link href='style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <img src='https://content.codecademy.com/courses/freelance-1/unit-2/explorer.jpeg' />
+  <h1 class='title uppercase' id='article-title'>Top Vacation Spots</h1>
+  <h5 class='author-class' id='author-id'>By: Stacy Gray</h5>
+  <h6 id='publish-time'>Published: 2 Days Ago</h6>
+
+  <p>The world is full of fascinating places. Planning the perfect vacation involves packing up, leaving home, and experiencing something new.</p>
+
+  <h2 class='destination heading-background'>1. Florence, Italy</h2>
+  <div class='description'>A city-size shrine to the Renaissance, Florence offers frescoes, sculptures, churches, palaces, and other monuments from the richest cultural flowering the world has known. Names from its dazzling historical past; Dante, Michelangelo, Galileo, Machiavelliare are some of the most resonant of the medieval age. <a href='https://www.nationalgeographic.com/travel/destination/florence' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Museums</li>
+      <li>Bike Tours</li>
+      <li>Historical Monuments</li>
+    </ul>
+  </div>
+
+  <h2 class='destination heading-background'>2. Beijing, China</h2>
+  <div class='description'>A city in the midst of reinventing itself and continuing to build on the success of the 2008 Summer Olympics, Beijing is a place of frenzied construction. New housing, new roads, and new sports venues seem to spring up overnight. At the same time, the capital of the Peoples Republic of China remains an epicenter of tradition, with the treasures of nearly 2,000 years as the imperial capital still on view in the famed Forbidden City and in the luxuriant pavilions and gardens of the Summer Palace.
+    <a href='https://www.nationalgeographic.com/travel/destination/beijing' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Biking</li>
+      <li>Historical Sites</li>
+      <li>Restaurants and Dining</li>
+    </ul>
+  </div>
+
+  <h2 class='destination heading-background'>3. Seoul, South Korea</h2>
+  <div class='description'>The Korean capital is a city of contrasts. Fourteenth-century city gates squat in the shadow of 21st-century skyscrapers, while the broad Han River is back-dropped by granite mountains rising in the city center complete with alpine highways speeding around their contours and temples nestling among their crags. Fashionable, gadget-laden youths battle for sidewalk space with fortune-tellers and peddlers, while tiny neighborhoods of traditional cottages contrast with endless ranks of identical apartments.
+    <a href='https://www.nationalgeographic.com/travel/destination/seoul' target='_blank'>Learn More</a>.
+    <h5>Top Attractions</h5>
+    <ul>
+      <li>Parasailing</li>
+      <li>Segway Tours</li>
+      <li>Spas and Resorts</li>
+    </ul>
+  </div>
+
+  <h2 class='heading-background'> More Destinations </h2>
+  <ul>
+    <li><h4 class='destination'>Jackson Hole, Wyoming</h4></li>
+    <li><h4 class='destination'>Cape Town, South Africa</h4></li>
+    <li><h4 class='destination'>La Paz, Bolivia</h4></li>
+  </ul>
+
+  <p>&mdash;Best of luck with your travels, and be sure to send pictures and stories. We'd love to hear them!</p>
+
+
+</body>
+
 </html>
